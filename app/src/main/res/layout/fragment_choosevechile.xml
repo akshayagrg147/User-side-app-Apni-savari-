@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".choosevechile"
+
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tootlbarcomp1"
+            android:background="@color/quantum_black_text"
+
+app:titleTextColor="@color/quantum_white_100"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <fragment
+        android:id="@+id/map"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="10dp">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/select_vechile_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/select_truck"
+                    android:layout_width="60dp"
+
+                    android:layout_height="60dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/truck1" />
+
+                <ImageView
+                    android:id="@+id/select_truck2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ranger" />
+
+                <ticker.views.com.ticker.widgets.circular.timer.view.CircularView
+                    android:id="@+id/circular_view_with_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+
+                    app:m_circle_radius="20"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp">
+
+
+                <Button
+                    android:id="@+id/getfare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/select_vechile_group"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/checkfare"
+                    android:text="Calculate Fare"
+                    android:textAlignment="center"
+                    android:textColor="@color/quantum_white_text"
+
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPickupRequest"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_vechile_group"
+
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_sign_in_background"
+                android:text="PICKUP REQUEST"
+                android:textColor="@color/quantum_white_text"
+
+
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

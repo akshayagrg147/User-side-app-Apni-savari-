@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_yellow"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".contactinfo">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tootlbarBcall"
+            android:background="@color/gradient_end_color"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:text="ApniSavari Team"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:textAlignment="center"
+        android:layout_marginTop="55dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/bg_round"
+
+        android:src="@drawable/ic_call_black_524dp"
+
+        />
+    <TextView
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:text="Call us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="+917973434833"
+        android:id="@+id/btn_call_technical"
+
+        android:layout_width="match_parent"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="80dp"
+
+
+
+        android:layout_marginTop="145dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="------------------------------"
+        android:background="@color/quantum_black_text"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="163dp"
+        android:layout_height="2dp"/>
+
+    <ImageButton
+
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/bg_round"
+
+        android:src="@drawable/ic_email_black_24dp"
+
+        />
+    <TextView
+        android:layout_marginTop="216dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:text="Email us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Akshaygarg147@gmail.com"
+
+        android:id="@+id/btn_email_technical"
+        android:layout_width="match_parent"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="80dp"
+
+
+
+        android:layout_marginTop="245dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="----------------------------------------------"
+        android:background="@color/quantum_black_text"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="264dp"
+        android:layout_height="2dp"/>
+    <ImageButton
+
+        android:layout_width="72dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/bg_round"
+
+        android:src="@drawable/ic_home_black_24dp"
+
+        />
+    <TextView
+        android:text="Contact Address"
+        android:layout_marginTop="900px"
+        android:layout_marginLeft="90dp"
+
+        android:textStyle="bold"
+        android:textSize="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="#157/7,new Pyoda road kaithal jind road kaithal Haryana,136027"
+        android:layout_marginTop="1000px"
+        android:layout_marginLeft="90dp"
+        android:textStyle="italic"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

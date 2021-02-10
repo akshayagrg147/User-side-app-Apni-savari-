@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:background="@color/main_green_color"
+    tools:context=".otpverification">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="ApniSavari OTP" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter Code"
+        android:layout_margin="30dp"
+
+        android:id="@+id/code"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/red_btn_bg_color"
+        android:id="@+id/btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Verify"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:id="@+id/resend"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Resend Sms"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content" />
+    <ticker.views.com.ticker.widgets.circular.timer.view.CircularView
+        android:id="@+id/verificatontimer"
+        android:layout_width="246dp"
+        android:layout_height="231dp"
+        android:layout_marginLeft="40dp"
+
+
+        android:text="30"
+
+
+        app:m_circle_radius="150"
+
+
+        />
+
+</LinearLayout>

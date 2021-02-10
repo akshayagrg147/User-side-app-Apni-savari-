@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:outlineAmbientShadowColor="@color/gradient_end_color"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/Date1"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="60dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:text="TUESDAY,09/06/2019" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+         <TextView
+             android:text="BookingId:-"
+             android:textAlignment="center"
+             android:textColor="@color/red_btn_bg_color"
+             android:textStyle="bold"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/CancellationId"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/red_btn_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+
+                android:text="A7BZiOdFg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+            <ImageView
+                android:src="@drawable/ss"
+                android:layout_width="23dp"
+                android:layout_height="23dp"/>
+
+            <TextView
+                android:id="@+id/pickup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="pickup" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+            <ImageView
+                android:src="@drawable/endpos"
+                android:layout_width="23dp"
+                android:layout_height="23dp"/>
+
+
+            <TextView
+                android:id="@+id/destination1"
+                android:text="Destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="316dp"
+                android:layout_height="56dp"
+                android:text="------------------------------------------------------"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="135dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Cancelled"
+                android:textStyle="bold"
+
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="135dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="0dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/can"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/driversPic"
+               android:layout_marginLeft="0dp"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/avatar"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
